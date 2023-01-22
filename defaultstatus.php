@@ -122,7 +122,7 @@ switch ($action) {
                 $availablebeforesession[$id] = 0;
             }
             $errors[$id] = attendance_update_status($status, $acronym[$id], $description[$id], $grade[$id],
-                                             null, null, null, $studentavailability[$id], $availablebeforesession[$id], $setunmarked);
+                                    null, null, null, $studentavailability[$id], $availablebeforesession[$id], $setunmarked);
         }
         echo $OUTPUT->notification(get_string('eventstatusupdated', 'attendance'), 'success');
 
